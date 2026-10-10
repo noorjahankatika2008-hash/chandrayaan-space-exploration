@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactive student project about India's Chandrayaan lunar missions." />
+  <title>Chandrayaan | India's Journey to the Moon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Chandrayaan home">
+      <span class="brand-mark">✦</span><span>CHANDRAYAAN<span class="brand-sub">INDIA'S LUNAR JOURNEY</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#overview">Overview</a>
+      <a href="#missions">Missions</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#facts">Quick Facts</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> INDIA'S SPACE EXPLORATION PROGRAM</p>
+        <h1>A giant leap<br />for <span>lunar science.</span></h1>
+        <p class="hero-copy">Discover how India's Chandrayaan missions are helping us understand the Moon and inspiring a new generation of explorers.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#missions">Explore missions <span>↗</span></a>
+          <a class="text-link" href="#overview">Learn the story ↓</a>
+        </div>
+        <div class="hero-stat-row">
+          <div><strong>2008</strong><span>First mission launched</span></div>
+          <div><strong>23 Aug</strong><span>National Space Day in India</span></div>
+          <div><strong>ISRO</strong><span>India's space agency</span></div>
+        </div>
+      </div>
+      <div class="moon-scene" aria-label="Illustration of the Moon and a lunar lander">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="moon"><div class="crater crater-a"></div><div class="crater crater-b"></div><div class="crater crater-c"></div><div class="crater crater-d"></div><div class="crater crater-e"></div></div>
+        <div class="lander"><div class="lander-top"></div><div class="lander-body"><span>ISRO</span></div><div class="lander-leg leg-left"></div><div class="lander-leg leg-right"></div><div class="lander-foot foot-left"></div><div class="lander-foot foot-right"></div><div class="lander-panel"></div></div>
+        <div class="scene-label"><span class="label-line"></span><span>THE MOON<br /><small>Earth's natural satellite</small></span></div>
+        <div class="floating-star star-a">✦</div><div class="floating-star star-b">✧</div><div class="floating-star star-c">✦</div>
+      </div>
+      <div class="hero-bottom"><span>01 / EXPLORE THE UNKNOWN</span><span>SCROLL TO DISCOVER <span class="scroll-arrow">↓</span></span></div>
+    </section>
+
+    <section class="intro section-wrap" id="overview">
+      <div class="section-kicker">01 — OVERVIEW</div>
+      <div class="intro-grid">
+        <h2>What is<br /><em>Chandrayaan?</em></h2>
+        <div class="intro-text">
+          <p><strong>Chandrayaan</strong> is India's lunar exploration programme developed by the Indian Space Research Organisation (ISRO). The name comes from Sanskrit: <em>Chandra</em> means Moon and <em>Yaan</em> means vehicle or craft.</p>
+          <p>Through orbiters, landers and rovers, the programme studies the Moon's surface, minerals, water-related signatures and environment. Each mission builds on lessons from the previous one.</p>
+          <div class="note"><span class="note-icon">✦</span><span><strong>Mission goal</strong><br />To expand scientific knowledge of the Moon and advance India's space technology.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="missions-section" id="missions">
+      <div class="section-wrap">
+        <div class="section-kicker">02 — THE MISSIONS</div>
+        <div class="section-heading-row"><h2>Three missions.<br /><em>One bold ambition.</em></h2><p>Choose a mission to reveal its key achievements.</p></div>
+        <div class="mission-tabs" role="tablist" aria-label="Chandrayaan missions">
+          <button class="mission-tab active" role="tab" aria-selected="true" data-mission="1">01 <span>Chandrayaan-1</span></button>
+          <button class="mission-tab" role="tab" aria-selected="false" data-mission="2">02 <span>Chandrayaan-2</span></button>
+          <button class="mission-tab" role="tab" aria-selected="false" data-mission="3">03 <span>Chandrayaan-3</span></button>
+        </div>
+        <article class="mission-detail" aria-live="polite">
+          <div class="mission-number" id="missionNumber">01</div>
+          <div class="mission-copy"><p class="mission-date" id="missionDate">OCTOBER 2008</p><h3 id="missionTitle">Chandrayaan-1</h3><p id="missionDescription">India's first lunar mission mapped the Moon and helped provide strong evidence for water molecules on the lunar surface.</p><div class="achievement"><span class="achievement-icon">↗</span><div><strong>KEY ACHIEVEMENT</strong><p id="missionAchievement">Helped confirm the presence of water molecules on the Moon.</p></div></div></div>
+          <div class="mission-visual" id="missionVisual"><div class="visual-moon"></div><div class="visual-orbit"></div><div class="visual-satellite"><span></span></div><div class="visual-caption">LUNAR ORBITER</div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="timeline-section section-wrap" id="timeline">
+      <div class="section-kicker">03 — KEY DATES</div>
+      <div class="section-heading-row"><h2>A timeline of<br /><em>discovery.</em></h2><p>Milestones in India's journey towards the Moon.</p></div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-year">2008</div><div class="timeline-dot"></div><div class="timeline-content"><h3>Chandrayaan-1 launches</h3><p>India begins its first lunar mission, studying the Moon from orbit.</p></div><span class="timeline-tag">FIRST MISSION</span></div>
+        <div class="timeline-item"><div class="timeline-year">2019</div><div class="timeline-dot"></div><div class="timeline-content"><h3>Chandrayaan-2 launches</h3><p>The orbiter begins studying the Moon; the lander did not complete its planned soft landing.</p></div><span class="timeline-tag">ORBITER SCIENCE</span></div>
+        <div class="timeline-item"><div class="timeline-year">2023</div><div class="timeline-dot"></div><div class="timeline-content"><h3>Chandrayaan-3 lands successfully</h3><p>Vikram landed near the lunar south polar region and Pragyan explored the surface.</p></div><span class="timeline-tag">SOFT LANDING</span></div>
+        <div class="timeline-item"><div class="timeline-year">23 AUG</div><div class="timeline-dot"></div><div class="timeline-content"><h3>India celebrates National Space Day</h3><p>The date honours the Chandrayaan-3 landing and India's space achievements.</p></div><span class="timeline-tag">NATIONAL SPACE DAY</span></div>
+      </div>
+    </section>
+
+    <section class="facts-section" id="facts">
+      <div class="section-wrap facts-wrap">
+        <div class="section-kicker">04 — QUICK FACTS</div>
+        <div class="section-heading-row"><h2>Space, in<br /><em>a nutshell.</em></h2><p>A few fascinating details about Chandrayaan-3.</p></div>
+        <div class="facts-grid">
+          <div class="fact-card"><span class="fact-symbol">◉</span><strong>14</strong><span>Earth days of planned surface operations for the lander and rover</span></div>
+          <div class="fact-card"><span class="fact-symbol">⌁</span><strong>2</strong><span>Key surface elements: Vikram lander and Pragyan rover</span></div>
+          <div class="fact-card"><span class="fact-symbol">23.08.23</span><strong>2023</strong><span>The year Chandrayaan-3 achieved a successful soft landing</span></div>
+          <div class="fact-card"><span class="fact-symbol">✧</span><strong>South</strong><span>Polar region, a scientifically important area of the Moon</span></div>
+        </div>
+        <div class="quiz-card">
+          <div><p class="quiz-label">TEST YOUR SPACE KNOWLEDGE</p><h3>Quick quiz</h3><p>Which Chandrayaan mission successfully soft-landed on the Moon in 2023?</p></div>
+          <div class="quiz-options"><button data-answer="2">Chandrayaan-2</button><button data-answer="3">Chandrayaan-3</button><button data-answer="1">Chandrayaan-1</button><p id="quizFeedback" aria-live="polite">Choose an answer to check your knowledge.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">✦</span><span>CHANDRAYAAN<span class="brand-sub">INDIA'S LUNAR JOURNEY</span></span></a><p>Student project made with HTML, CSS & JavaScript.</p><a href="#home" class="back-top">BACK TO TOP ↑</a><p class="disclaimer">Educational project. For official mission information, visit ISRO.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
